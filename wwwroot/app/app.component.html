@@ -1,0 +1,32 @@
+
+
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button> 
+
+      <img src="./app/imgs/pet.jpg" width="100px" />
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+         <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Home</a></li>
+        <li><a [routerLink]="['/patients']">Patient</a></li>
+        <li><a [routerLink]="['/funds']">Service</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="container-fluid text-center">
+  <p>Copyright(c) dev</p>
+</footer>
