@@ -1,32 +1,51 @@
+<header class="header-search">
 
+	<div class="header-limiter">
 
- <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> 
+		<h1><a href="#">Company<span>logo</span></a></h1>
 
-      <img src="./app/imgs/pet.jpg" width="100px" />
-      
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-         <li><a [routerLink]="['/dashboard']" routerLinkActive="active">Home</a></li>
-        <li><a [routerLink]="['/patients']">Patient</a></li>
-        <li><a [routerLink]="['/funds']">Service</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+		<nav>
+			<a [routerLink]="['/dashboard']" routerLinkActive="active">Home</a>
+			<a [routerLink]="['/patients']">Patient</a>
+			<a [routerLink]="['/funds']">Service</a>
+		</nav>
+
+		<form method="get" action="#">
+			<input type="search" placeholder="Search!" name="search">
+		</form>
+
+	</div>
+
+</header>   
 
 <router-outlet></router-outlet>
 
-<footer class="container-fluid text-center">
-  <p>Copyright(c) dev</p>
-</footer>
+	<footer class="footer-distributed">
+
+			<div class="footer-right">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-linkedin"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+
+			</div>
+
+			<div class="footer-left">
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p>Company Name © 2016</p>
+			</div>
+
+		</footer>
